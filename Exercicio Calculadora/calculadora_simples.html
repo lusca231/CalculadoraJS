@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Calculadora</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+
+	<body>
+		<div id="conteudo">
+			<h1 id="titulo">
+				CALCULADORA - SIMPLES
+			</h1>
+			<div id="form">
+				<form name="frmmedia" method="get" action="calculadora_simples.php">
+					<label> Valor 1:</label>
+					<input type="text" id="valor1" class="valor"> <br>
+					<label>Valor 2:</label>
+					<input type="text" id="valor2" class="valor"> <br>
+
+					<div class="divOperacoes">
+						<div onclick="calcular('somar')" class="botao">+</div>
+						<div onclick="calcular('subtrair')" class="botao">-</div>
+					</div>
+
+					<div class="divOperacoes">
+						<div onclick="calcular('multiplicar')" class="botao">*</div>
+						<div onclick="calcular('dividir')" class="botao">/</div>
+					</div>
+
+					<div class="divOperacoes">
+						<div onclick="limpar()" class="botao">CE</div>
+					</div>
+				</form>
+			</div>
+			<div id="resultado">
+				0
+			</div>
+		</div>
+
+		<script src="js/calculadora.js"></script>
+	</body>
+
+</html>
